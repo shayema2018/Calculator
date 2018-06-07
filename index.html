@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Scientific Calculator</title>		
+
+	    <!-- Theme CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<h2>Javascript First Assignment</h2>
+		<button type="button" class="assignment">CALCULATOR</button>
+		<section>
+			<div class="container">
+				<div class="row">
+					<h1>Scientific Calculator</h1>
+				</div>	
+			</div>					
+			<div id="container">				
+				<div class="row">
+					<div class="col-lg-12">						
+						<div>
+							<form name="calculator">
+								<div class="screen">
+									<input type="text" name="display" id="scn" size="20" readonly maxlength="50">
+								</div>
+								<div class="btns">
+									<p>
+									    <input type='button' name='sin' value='SIN' class="button black" onclick="calculator.display.value=Math.sin(calculator.display.value)">
+										<input type='button' name='cos' value='COS' class="button black" onclick="calculator.display.value=Math.cos(calculator.display.value)">
+										<input type='button' name='tan' value='TAN' class="button black" onclick="calculator.display.value=Math.tan(calculator.display.value)">
+										<input type='button' name='(-)' value='(-)' class="button black" onclick="changeSign(calculator.display.value)">
+										<input type='button' name='absolute' value='ABS' class="button black" onclick="calculator.display.value=Math.abs(calculator.display.value)">
+									</p>
+									<p>
+										<input type='button' name='sqrt' value='&radic;' class="button black" onclick="calculator.display.value=Math.sqrt(calculator.display.value)">
+										<input type='button' name='sqr' value='SQR' class="button black" onclick="calculator.display.value=Math.pow(calculator.display.value,2)">
+										<input type='button' name='^' value='^' class="button black" onclick="calculator.display.value=Math.pow(calculator.display.value,calculator.display.value)">
+										<input type='button' name='log' value='LOG' class="button black" onclick="calculator.display.value=Math.log(calculator.display.value)">
+										<input type='button' name='in' value='In' class="button black" onclick="calculator.display.value=Math.E">
+									</p>
+									<p>
+										<input type='button' name='clear' value='CLR' class="button black" onclick="calculator.display.value=''">
+										<input type='button' name='open bracet' value='(' class="button black" onclick="calculator.display.value+='('">								
+										<input type='button' name='close bracet' value=')' class="button black" onclick="calculator.display.value+=')'">
+										<input type='button' name='memory' value='M+' class="button black" onclick="calculator.display.value+='M+'">
+										<input type='button' name='modulas' value='MOD' class="button black" onclick="calculator.display.value+='%'">
+									</p>
+									<p>
+										<input type='button' name='seven' value='7' class="button silver" onclick="calculator.display.value+='7'">
+										<input type='button' name='eight' value='8' class="button silver" onclick="calculator.display.value+='8'">
+										<input type='button' name='nine' value='9' class="button silver" onclick="calculator.display.value+='9'">
+										<input type='button' name='delete' value='DEL' class="button red" onclick="calculator.display.value =calculator.display.value=calculator.display.value.substring(0,calculator.display.value.length-1)">
+										<input type='button' name='exit' value='EXIT' class="button red" onclick="calculator.display.value=''">
+									</p>
+									<p>
+										<input type='button' name='four' value='4' class="button silver" onclick="calculator.display.value+='4'">
+										<input type='button' name='five' value='5' class="button silver" onclick="calculator.display.value+='5'">
+										<input type='button' name='six' value='6' class="button silver" onclick="calculator.display.value+='6'">
+										<input type='button' name='multiplication' value='*' class="button silver" onclick="calculator.display.value+='*'">
+										<input type='button' name='division' value='/' class="button silver" onclick="calculator.display.value+='/'">
+									</p>
+									<p>
+										<input type='button' name='one' value='1' class="button silver" onclick="calculator.display.value+='1'">
+										<input type='button' name='two' value='2' class="button silver" onclick="calculator.display.value+='2'">
+										<input type='button' name='three' value='3' class="button silver" onclick="calculator.display.value+='3'">
+										<input type='button' name='plus' value='+' class="button silver" onclick="calculator.display.value+='+'">
+										<input type='button' name='minus' value='-' class="button silver" onclick="calculator.display.value+='-'">
+									</p>
+									<p>
+										<input type='button' name='zero' value='0' class="button silver" onclick="calculator.display.value+='0'">
+										<input type='button' name='dot' value='.' class="button silver" onclick="calculator.display.value+='.'";>
+										<input type='button' name='exp' value='EXP' class="button silver" onclick="calculator.display.value+=Math.exp(calculator.display.value)">
+										<input type='button' name='Pi' value='Pi' class="button silver" onclick="calculator.display.value+=Math.PI">
+										<input type='button' name='equal' value='=' class="button silver" onclick="calculator.display.value=eval(calculator.display.value)">
+									</p>
+								</div>
+							</form>
+						</div>
+					</div>					
+				</div>				
+			</div>
+		</section>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			function changeSign(input){
+				if(calculator.display.value.substring(0,1)=="-")
+					calculator.display.value=calculator.display.value.substring(1,calculator.display.value.length)
+				else
+					calculator.display.value="-"+calculator.display.value
+			}
+			$("section").hide();
+			$(".assignment").click(function(){
+				$("h2").hide(500);
+				$("section").show(500);
+			});			
+		</script>
+	</body>
+</html>

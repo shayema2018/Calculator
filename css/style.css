@@ -1,0 +1,117 @@
+h1{
+	background-color: pink;	
+	height: 40px;
+	width: 300px;
+	border-radius: 8px;
+	position: relative;
+	top: 10px;
+	left: 40%;
+	padding-top: 8px;	
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+h1:hover{
+	color: pink;
+	background-color: white;
+	border: 1px solid;
+}
+h2{
+	color: deeppink;
+	font-weight: bold;
+}
+.assignment{
+	background-color: pink;
+	color: white;
+	font-weight: bold;
+}
+.assignment:hover{
+	background-color: white;
+	color: pink;
+	-webkit-transition: ease;
+	-moz-transition: ease;
+	-o-transition: ease;
+	transition: ease;
+}
+#container{
+	background-color: pink;
+	height: 420px;
+	width: 300px;
+	border-radius: 8px;
+	position: relative;
+	top: 20px;
+	left: 40%;
+}
+.screen{
+	background-color: #ffff99;
+	width: 270px;
+	height: 60px;
+	position: relative;
+	top: 20px;
+	left: 15px;
+}
+.screen input{
+	position: relative;	
+	height: 56px;
+	width: 266px;
+	color: black;
+	background-color: #e5dfa0;
+	font-size: 25px;
+	text-align: right;
+}
+.btns{
+	position: relative;
+	top: 20px;
+	left: 15px;	
+}
+.button{
+	width: 40px;
+	height: 30px;
+	border: none;
+	border-radius: 8px;
+	margin-left: 9px;
+	cursor: pointer;
+	font-weight: bold;
+	padding-left: 6px;
+}
+.button.black{
+	color: white;
+	background-color: black;
+	border-bottom: 2px solid #647489;
+	border-top: 2px black;
+	padding-left: 6px;	
+}
+.button.black:hover{
+	color: black;
+	background-color: white;
+	-webkit-transition: ease;
+	-moz-transition: ease;
+	-o-transition: ease;
+	transition: ease;
+}
+.button.silver{
+	color: white;
+	background-color: #647489;
+	border-bottom: 2px solid black;
+}
+.button.silver:hover{
+	color: #647489;
+	background-color: white;
+	-webkit-transition: ease-in;
+	-moz-transition: ease-in;
+	-o-transition: ease-in;
+	transition: ease-in;
+}
+.button.red{
+	color: white;
+	background-color: red;
+	border-bottom: 2px solid #647489;
+}
+.button.red:hover{
+	color: red;
+	background-color: white;
+	-webkit-transition: ease-in-out;
+	-moz-transition: ease-in-out;
+	-o-transition: ease-in-out;
+	transition: ease-in-out;
+}
